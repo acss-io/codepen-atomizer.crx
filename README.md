@@ -1,7 +1,7 @@
 ## How to install?
 1. Download the extension file (`codepen-atomizer.crx`) from [here](https://github.com/acss-io/codepen-atomizer.crx/raw/master/codepen-atomizer.crx).
 2. Open the extensions page (`chrome://extensions`) in the browser.
-3. Drag and drop the downloaded file on this page and click **Add** to install the extension.
+3. Drag and drop the downloaded file on this page and click **Add Extension** to install the extension.
 
 > **Q: Why the extension is not available on the Chrome Web Store?** Because, I am unwilling to pay a one-time fee of $5 to setup the account.
 
