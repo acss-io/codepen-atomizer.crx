@@ -18993,26 +18993,22 @@ module.exports = Atomizer;
 
 },{"./helpers.js":5,"./lib/grammar":6,"./lib/jss":7,"./lib/utils":8,"./rules.js":9,"lodash":1,"object-assign":2,"xregexp":3}]},{},[]);
 
-
-
-
-
 var Atomizer = require('Atomizer');
 var atomizer = new Atomizer();
 
 function getConfig(){
     return {
-    "breakPoints": {
-        "sm": "@media(min-width=750px)",
-        "md": "@media(min-width=1000px)",
-        "lg": "@media(min-width=1200px)"
-    },
-    "custom": {
-        "1": "1px solid #000",
-        "foo": "2px dotted #f00"
-    },
-    "classNames": []
-}
+        "breakPoints": {
+            "sm": "@media(min-width=750px)",
+            "md": "@media(min-width=1000px)",
+            "lg": "@media(min-width=1200px)"
+        },
+        "custom": {
+            "1": "1px solid #000",
+            "foo": "2px dotted #f00"
+        },
+        "classNames": []
+    }
 }
 
 CP.htmlEditor.editor.on('change', function(cm){
@@ -19022,5 +19018,5 @@ CP.htmlEditor.editor.on('change', function(cm){
     var finalConfig = atomizer.getConfig(foundClasses, getConfig());
     var acss = atomizer.getCss(finalConfig);
 
-    CP.cssEditor.editor.setValue( acss );
+    CP.cssEditor.editor.setValue(acss);
 });
